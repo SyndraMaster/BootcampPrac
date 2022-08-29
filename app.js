@@ -136,7 +136,9 @@ app.get("/:customListName", function(req, res){
 //     items: 
 //   })
 // })
-app.listen('https://bootcampprac-production.up.railway.app/', () => {
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
     console.log("Server Abierto en el puerto localhost:3000")
 });
 
